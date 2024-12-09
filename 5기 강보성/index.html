@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>계산기 프로젝트</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="main-container">
+        <div class="calc-wrapper">
+          <div class="calc-header">
+            <div class="calc-title">계산기</div>
+            <div data-previous class="calc-prev"></div>
+            <div data-current class="calc-curr"></div>
+          </div>
+          <div class="calc-body">
+            <div class="calc-row">
+              <button data-reset class="btn btn-ac">AC</button>
+              <button data-delete class="btn-del">DEL</button>
+              <button data-operation class="btn-divide">/</button>
+            </div>
+            <div class="calc-row">
+              <button data-number class="btn-num">1</button>
+              <button data-number class="btn-num">2</button>
+              <button data-number class="btn-num">3</button>
+              <button data-operation class="btn btn-multiply">x</button>
+            </div>
+            <div class="calc-row">
+              <button data-number class="btn-num">4</button>
+              <button data-number class="btn-num">5</button>
+              <button data-number class="btn-num">6</button>
+              <button data-operation class="btn btn-minus">-</button>
+            </div>
+            <div class="calc-row">
+              <button data-number class="btn-num">7</button>
+              <button data-number class="btn-num">8</button>
+              <button data-number class="btn-num">9</button>
+              <button data-operation class="btn btn-plus">+</button>
+            </div>
+            <div class="calc-row">
+              <button data-number class="btn-dot">.</button>
+              <button data-number class="btn-zero">0</button>
+              <button data-operation data-equal class="btn-equal">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
