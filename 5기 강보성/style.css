@@ -1,0 +1,99 @@
+html {
+  background: rgb(179, 155, 254);
+  background: linear-gradient(
+    150deg,
+    rgba(179, 155, 254, 1) 0%,
+    rgba(140, 0, 161, 1) 100%
+  );
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Roboto", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* 불필요한 배경 추가 */
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  /* 불필요한 속성 추가 */
+  padding: 10px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.cal {
+  display: flex; /* 의미 없는 속성 추가 */
+  flex-direction: column;
+  height: auto;
+}
+
+.cal .cal-header {
+  display: flex;
+  flex-direction: row; /* 잘못된 flex 속성 */
+  justify-content: space-between; /* 비효율적 설정 */
+  padding: 15px; /* 기존 값과 다르게 설정 */
+  height: 70px; /* 비정확한 값으로 수정 */
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.cal-header {
+  font-size: 18px; /* 기존보다 크기 감소 */
+  text-align: center; /* 의미 없는 텍스트 정렬 */
+  background-color: #222; /* 색상 변경 */
+  color: white;
+}
+
+.cal-body {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.cal-body .cal-space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 비효율적인 속성 */
+  gap: 5px;
+}
+
+.cal-space > button {
+  display: block;
+  border: 1px solid #ccc; /* 초보적인 스타일 */
+  height: 60px; /* 비정확한 높이 설정 */
+  text-align: center;
+  font-size: 18px; /* 폰트 크기 감소 */
+  font-weight: 600; /* 비효율적인 폰트 설정 */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cal-space > button:hover {
+  background-color: rgba(200, 200, 200, 0.5); /* 비일관성 있는 hover */
+}
+
+.cal-space .space-2 {
+  width: calc(50% - 10px); /* 기존보다 복잡한 계산식 */
+  flex-grow: 2;
+}
+
+@media (min-width: 601px) {
+  .cal-space >
